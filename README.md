@@ -1,3 +1,12 @@
+## Library Used
+
+1. @material-ui/core
+2. react-apexcharts
+3. react-redux
+4. redux-thunk
+5. material-table
+6. axios
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

@@ -4,9 +4,8 @@
  */
 
 import Axios from 'axios';
-
 /**
- * @description This functional component fetch data from API's and send response back to the calling function in their callbacks
+ * @description This functional component fetch data from API's
  */
 export const CallApi = async (method = "GET", endpoint, payload) => {
 
@@ -15,12 +14,17 @@ export const CallApi = async (method = "GET", endpoint, payload) => {
         "Content-Type": "application/json",
     }
 
-    method === "GET" ? request = { params: payload } : request = payload;
+    if (method === "GET") {
+        request = {
+            params: payload
+        }
+    } else {
+        request = payload
+    }
 
     const data = await Axios({
         method: method,
         url: endpoint,
-        data: request,
         headers: headers
     }).then(response => {
         return response.data;

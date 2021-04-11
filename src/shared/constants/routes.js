@@ -1,13 +1,12 @@
 /**
  * @author SURUCHI KAUR SIHRA
  * @description Common Route Url
- * @file Constant Common Route URL
  */
 
 const ROUTES = {
-    LOGIN: '/',
-    DASHBOARD: '/dashboard',
-    MYCART: '/cart'
+    DEFAULT: '/',
+    FIND_MY_DOG: '/findMyDog',
+    CAMPAIGN_PERFORMANCE: '/campaignPerformance',
 };
 
 export default ROUTES;

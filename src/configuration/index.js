@@ -5,19 +5,16 @@
  */
 
 var SERVER = {
-    LOCAL: "http://localhost:8000",
+    DOG: "https://dog.ceo/api",
 };
 
-var BASE_URL = SERVER.LOCAL;
+var BASE_URL = SERVER.DOG;
 
 const CONFIG = {
-    login: `${BASE_URL}/api/login`,
-    getTestsList: `${BASE_URL}/api/getTestsList`,
-    searchTestsList: `${BASE_URL}/api/searchTestsList`,
-    placeOrder: `${BASE_URL}/api/placeOrder`,
-    saveToRedis: `${BASE_URL}/api/saveToRedis`,
-    removeFromRedis: `${BASE_URL}/api/removeFromRedis`,
-    resetRedis: `${BASE_URL}/api/resetRedis`,
+    random: `${BASE_URL}/breeds/image/random`,
+    breedList: `${BASE_URL}/breeds/list/all`,
+    breed: `${BASE_URL}/breed/{breed-name}/images`,
+    subBreed: `${BASE_URL}/breed/{breed-name}/{sub-vreed-name}/images`
 };
 
 export default CONFIG;

@@ -1,9 +1,11 @@
 import { combineReducers } from 'redux';
+import DogReducer from './Dog/dog.reducer';
 
-import counterReducer from './Counter/counter.reducer';
-
+/**
+ * @description root reducer
+ */
 const rootReducer = combineReducers({
-    counter: counterReducer,
+    data: DogReducer,
 });
 
 export default rootReducer;
